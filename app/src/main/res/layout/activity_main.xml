@@ -46,4 +46,11 @@
         android:text="@string/scan_qr_code"
         android:layout_marginTop="12dp"/>
 
+    <Button
+        android:id="@+id/btnDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/database"
+        android:layout_marginTop="12dp"/>
+
 </LinearLayout>

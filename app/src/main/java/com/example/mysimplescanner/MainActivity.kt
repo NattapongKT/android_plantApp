@@ -21,6 +21,8 @@ import java.io.OutputStream
 import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanOptions
 
+import android.content.Intent
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var etText: EditText
@@ -69,6 +71,12 @@ class MainActivity : AppCompatActivity() {
             options.setOrientationLocked(false)
 
             scanLauncher.launch(options)
+        }
+
+        findViewById<Button>(R.id.btnDatabase).setOnClickListener {
+            startActivity(
+                Intent(this, DatabaseActivity::class.java)
+            )
         }
 
     }
