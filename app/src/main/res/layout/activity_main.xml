@@ -10,12 +10,14 @@
         android:id="@+id/etText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:minHeight="48dp"
         android:padding="12dp"
-        android:autofillHints=""
         android:hint="@string/qr_code"
-        tools:ignore="TextFields"
-        android:textColor="#000000" />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:inputType="textNoSuggestions"
+        tools:ignore="TextFields" />
     <Button
         android:id="@+id/btnGenerate"
         android:layout_width="match_parent"
