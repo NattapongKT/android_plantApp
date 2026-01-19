@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.devtools.ksp)
 }
 
 android {
@@ -54,4 +55,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.zxing.core)
     implementation(libs.zxing.android.embedded)
+
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler) // ใช้ ksp แทน kapt
 }
